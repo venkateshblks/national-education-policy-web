@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    National Education Policy 
+</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+    <center class="cen">
+        
+        <h2> National Education Policy 
+        </h2>
+    </center>
+    <nav>
+      <ul class="list">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="work.html">OUR WORK </a></li>
+        <li><a href="team.html">TEAM INFO</a></li>
+        </ul>
+    </nav>
+  </div>
+   <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="tanuj.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="praveen.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="prem.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="venky.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000);
+    }
+  </script> 
+  <br>
+  <br><br>
+  <div class="conta">
+    <h2>Outcomes of NEP 2020
+    </h2><li>Universalization from ECCE to Secondary Education by 2030, aligning with SDG 4
+  </li>
+  <li>Attaining Foundational Learning & Numeracy Skills through National Mission by 2025</li>
+  <li>Teachers to be prepared for assessment reforms by 2023</li>
+  <li>Inclusive & Equitable Education System by 2030</li>
+  <li>Board Exams to test core concepts and application of knowledge</li>
+  <li>Every Child will come out of School adept in at least one Skill</li>
+</div>
+  <div class="cont">
+    <br>
+    <h2 class="pho">Contact Our Team</h2>
+    <br>
+    <i class="fa fa-envelope" id="ph"> </i> <i class="ph"> example.example.com</i>
+    <br><br>
+    <i class="fa fa-phone" id="ph"> </i> <i class="ph"> 12345-67890</i>
+    <br>
+    <br>
+    <br>
+  </div>
+</body>
+</html>
+
